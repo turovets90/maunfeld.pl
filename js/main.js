@@ -74,43 +74,6 @@ $(document).ready(function(){
 
 
 
-/*
-    $('.tab-content .tab-pane').each(function(){
-        var tab_content_slider = $(this).find('.tab_content_slider');
-        var tab_content_slider_item = $(this).find('.tab_content_slider > div');
-
-            $(tab_content_slider).slick({
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                arrows: false,
-                variableWidth: true,
-                responsive: [
-                    {
-                        breakpoint: 1200,
-                        settings: {
-                            slidesToShow: 3
-                        }
-                    },
-                    {
-                        breakpoint: 991,
-                        settings: {
-                            slidesToShow: 2
-                        }
-                    },
-                    {
-                        breakpoint: 575,
-                        settings: {
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-            });
-    });
-
-    */
-
-
-
     $('.sale_slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
