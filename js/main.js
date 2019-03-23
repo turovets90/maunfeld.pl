@@ -121,6 +121,26 @@ $(document).ready(function(){
         $('.new_slider').slick('slickNext');
     });
 
+
+    $('.product_slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: true,
+        asNavFor: '.product_slider_nav'
+    });
+
+    $('.product_slider_nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: true,
+        asNavFor: '.product_slider',
+        vertical:true,
+        focusOnSelect: true
+    });
+
+
+
     /*
     $('.hamburger').click(function () {
         $('.main_menu').slideToggle();
