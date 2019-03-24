@@ -140,6 +140,35 @@ $(document).ready(function(){
     });
 
 
+    $('.catalog_nav .arrow').click(function () {
+        $(this).toggleClass('act');
+        $(this).next().slideToggle();
+    });
+
+
+    $('.catalog_title').click(function () {
+        $(this).toggleClass('act');
+        $('.catalog_nav').slideToggle();
+    });
+
+
+    $('.filter_nav li').each(function(){
+        var f_item=$(this).find('.filter_item');
+        var f_arrow=$(this).find('.arrow');
+        var f_level2=$(this).find('.level2');
+        $(f_item).click(function () {
+            $(f_arrow).toggleClass('act');
+            $(f_level2).slideToggle();
+        });
+    });
+
+
+
+    $('.filter_title').click(function () {
+        $(this).toggleClass('act');
+        $('.filter_nav').slideToggle();
+    });
+
 
     /*
     $('.hamburger').click(function () {
