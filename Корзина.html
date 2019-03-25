@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Płatność</title>
+    <title>Koszyk</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -92,7 +92,7 @@
                 </li>
                 <li><a href="O sklepie.html">O sklepie</a></li>
                 <li><a href="Wysyłka.html">Wysyłka</a></li>
-                <li class="active"><a href="Płatność.html">Płatność</a></li>
+                <li><a href="Płatność.html">Płatność</a></li>
                 <li><a href="Kontakt.html">Kontakt</a></li>
                 <li><a href="Serwis.html">Serwis</a></li>
               </ul>
@@ -119,104 +119,74 @@
       <div class="container">
         <ul class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Główna</a></li>
-          <li class="breadcrumb-item"><a href="#content">Płatność</a></li>
+          <li class="breadcrumb-item"><a href="#content">Koszyk</a></li>
         </ul>
         <div class="content">
-          <h1>Płatność</h1>
-          <h5>Łatwo i wygodnie jest płacić za towary w sklepie firmowym AGD MAUNFELD.pl!</h5>
-          <p>Kupując u nas dowolny produkt, otrzymujesz czek kasjerski. <br>Aby zapłacić za towary, możesz użyć dowolnej dogodnej metody płatności wymienionej poniżej.</p>
-        </div>
-      </div>
-      <section class="section_payment">
-        <div class="container">
-          <h2>Dostępne opcje płatności</h2>
-          <div class="row">
-            <div class="col-12 col-sm-12 col-md-6 col-xl-6">
-              <div class="pay_item">
-                <picture><img src="img/pay/1.svg"/></picture>
-                <div class="text">
-                  <p>Płatność przelewem</p><span>Wysyłka towaru następuje po zaksięgowaniu środków na naszym koncie bankowym</span>
+          <h1>Koszyk</h1>
+          <div class="cart_container">
+            <form>
+              <div class="cart_table">
+                <div class="cart_header">
+                  <div class="c_empty"></div>
+                  <div class="c_product_name">Nazwa produktu</div>
+                  <div class="c_cost">Koszt</div>
+                </div>
+                <div class="row cart_body">
+                  <div class="col-12 col-sm-12 col-md-6 col-xl-12">
+                    <div class="cart_product_item">
+                      <div class="c_product_img"><a href="#"><img src="img/dishwashers.png"/></a></div>
+                      <div class="c_product_name">
+                        <div class="c_title">Nazwa produktu</div>
+                        <div class="c_cont"><span class="c_name"><a href="#">Winiarka - Wykonanie półek na butelki - WCB1K54B24.1</a></span><span class="br">Artykuł: UТ000001786</span></div>
+                      </div>
+                      <div class="c_cost">
+                        <div class="c_title">Koszt</div>
+                        <div class="c_cont"><span class="c_name">1.999,00 zł</span></div>
+                      </div><span class="c_delete">Usuń</span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-xl-12">
+                    <div class="cart_product_item">
+                      <div class="c_product_img"><a href="#"><img src="img/dishwashers.png"/></a></div>
+                      <div class="c_product_name">
+                        <div class="c_title">Nazwa produktu</div>
+                        <div class="c_cont"><span class="c_name"><a href="#">Winiarka - Wykonanie półek na butelki - WCB1K54B24.1</a></span><span class="br">Artykuł: UТ000001786</span></div>
+                      </div>
+                      <div class="c_cost">
+                        <div class="c_title">Koszt</div>
+                        <div class="c_cont"><span class="c_name">1.999,00 zł</span></div>
+                      </div><span class="c_delete">Usuń</span>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-xl-12">
+                    <div class="cart_product_item">
+                      <div class="c_product_img"><a href="#"><img src="img/dishwashers.png"/></a></div>
+                      <div class="c_product_name">
+                        <div class="c_title">Nazwa produktu</div>
+                        <div class="c_cont"><span class="c_name"><a href="#">Winiarka - Wykonanie półek na butelki - WCB1K54B24.1</a></span><span class="br">Artykuł: UТ000001786</span></div>
+                      </div>
+                      <div class="c_cost">
+                        <div class="c_title">Koszt</div>
+                        <div class="c_cont"><span class="c_name">1.999,00 zł</span></div>
+                      </div><span class="c_delete">Usuń</span>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-xl-6">
-              <div class="pay_item">
-                <picture><img src="img/pay/2.svg"/></picture>
-                <div class="text">
-                  <p>Płatność gotówką przy odbiorze</p><span>Należy przygotować odliczoną kwotę gotówki dla kuriera dostarczającego przesyłkę. Ta płatność gwarantuje szybką realizację zamówienia</span>
+              <div class="total_container">
+                <div class="total">
+                  <div class="d-flex">
+                    <p class="t_title">Koszt całkowity:</p>
+                    <div class="t_price_block">
+                      <div class="price"><span>3000,00 zł</span></div>
+                    </div>
+                  </div>
+                  <button class="btn_default">Złóż zamówienie</button>
                 </div>
               </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-xl-6">
-              <div class="pay_item">
-                <picture><img src="img/pay/3.svg"/></picture>
-                <div class="text">
-                  <p>Raty</p><span>Zamówienia już od 300 zł możesz spłacać w dogodnych dla Ciebie ratach za pośrednictwem dwóch dostępnych Santander Consumer Bank S.A. oraz Credit Agicole Bank Polska S.A..</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-xl-6">
-              <div class="pay_item">
-                <picture><img src="img/pay/4.svg"/></picture>
-                <div class="text">
-                  <p>Płatność kartą</p><span>Lub szybkim przelewem internetowym w jednym z wybranych banków. Zamówienie zostanie skompletowane i wysłane po zaksięgowaniu wpłaty.</span>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="pay_item">
-                <picture><img src="img/pay/5.png"/></picture>
-                <div class="text">
-                  <p>Błyskawiczny przelew online za pośreDnictwem systemu płatności mBank</p><span>Twoja płatność zostanie zaksięgowana błyskawicznie co pozwoli nam wysłać zamówienie równie szybko jak za pobraniem. Przesyłka zostanie skompletowana iwysłana po zaksięgowaniu wpłaty. </span>
-                </div>
-              </div>
-            </div>
+            </form>
           </div>
         </div>
-      </section>
-      <div class="container content pt-5 mb-md-5 pb-1">
-        <p>Jeśli masz jakieś pytania dotyczące kosztów i sposobów dostawy, skontaktuj się z naszym Biurem Obsługi Klienta za pośrednictwem formularza kontaktowego bądź telefonicznie: <a class="tel" href="tel:22 122 33 00">22 122 33 00</a>, od poniedziałku do piątaku w godzinach od 8:00 do 20:00 lub w soboty i niedziele od 10:00 do 18:00.</p>
-      </div>
-      <div class="contact_form">
-        <form id="payment_form">
-          <div class="row">
-            <div class="col-12 col-sm-12 col-md-6 col-xl-6">
-              <div class="row">
-                <div class="col-12">
-                  <div class="field">
-                    <label>Twoje imię</label>
-                    <input class="form-control" type="text"/>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="field">
-                    <label>Telefon / faks</label>
-                    <input class="form-control phone" type="tel" name="phone1" id="phone1" placeholder="+48 (--) --- -- --" data-rule-required="true" data-msg-required="Pole nie może być puste" required="required"/>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <div class="field">
-                    <label>Adres e-mail (niekoniecznie)</label>
-                    <input class="form-control" type="text" placeholder="example@email.com"/>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-xl-6">
-              <div class="row">
-                <div class="col-12">
-                  <div class="field">
-                    <label>Adres e-mail (niekoniecznie)</label>
-                    <textarea class="form-control"></textarea>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-12 text-center">
-              <button class="form_btn" type="submit">Wyślij</button>
-            </div>
-          </div>
-        </form>
       </div>
     </section>
     <footer>

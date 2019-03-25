@@ -26,7 +26,7 @@
           <div class="row">
             <div class="col-12 col-sm-12 col-md-4 col-xl-4"><a class="phone_link" href="tel:+48 67 12 34 56 789">+48 67 12 34 56 789</a></div>
             <div class="col-12 col-sm-12 col-md-4 col-xl-4"><a class="phone_link" href="tel:+48 67 12 34 56 789">+48 67 12 34 56 789</a></div>
-            <div class="col-12 col-sm-12 col-md-4 col-xl-4"><a class="btn_default" href="#" data-toggle="modal">Zamów połączenie</a></div>
+            <div class="col-12 col-sm-12 col-md-4 col-xl-4"><a class="btn_default" href="#modal_1" data-toggle="modal">Zamów połączenie</a></div>
           </div>
         </div>
       </div>
@@ -191,10 +191,55 @@
         </ul>
       </div>
     </footer>
+    <div class="modal fade" id="modal_1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button class="close" data-dismiss="modal" aria-label="Close">Zamknij</button>
+            <div class="text-center"><img class="logo" src="img/logotrace.png"/>
+              <p>Wypełnij poniższy formularz, aby poprosić o opinię. <br>Kierownik oddzwoni do Ciebie w ciągu 10 minut.</p>
+            </div>
+            <div class="contact_form modal_form">
+              <form id="modal_form">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="field">
+                      <label>Twoje imię</label>
+                      <input class="form-control" type="text"/>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="field">
+                      <label>Telefon / faks</label>
+                      <input class="form-control phone" type="tel" name="phone" id="phone" placeholder="+48 (--) --- -- --" data-rule-required="true" data-msg-required="Pole nie może być puste" required="required"/>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="field">
+                      <label>Adres e-mail (niekoniecznie)</label>
+                      <input class="form-control" type="text" placeholder="example@email.com"/>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="field">
+                      <label>Adres e-mail (niekoniecznie)</label>
+                      <textarea class="form-control"></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button class="form_btn" type="submit">Wyślij</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
-    <script src="js/bootstrap-filestyle.js"></script>
     <script src="js/phone-mask.js"></script>
+    <script src="js/jquery.validate.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/main.js"></script>

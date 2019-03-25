@@ -170,97 +170,29 @@ $(document).ready(function(){
     });
 
 
-    /*
-    $('.hamburger').click(function () {
-        $('.main_menu').slideToggle();
-        $(this).toggleClass('act');
+    $(".phone").mask("+48 (99) 999-99-99");
+
+    $("#modal_form").validate();
+    $("#payment_form").validate();
+
+
+
+    $('.amount .down').click(function () {
+        var $input = $(this).parent().find('input');
+        var count = parseInt($input.val()) - 1;
+        count = count < 1 ? 1 : count;
+        $input.val(count);
+        $input.change();
+        return false;
     });
-    */
-
-/*
-
-
-    $('.custom_item_title').click(function(){
-        $(this).toggleClass('active');
-        $(this).next().slideToggle();
-    });
-
-
-    if($(".our_specialists .slider_item").length >3){
-        $('.our_specialists').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows: false,
-            dots:false,
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 2,
-                    }
-                },
-                {
-                    breakpoint: 680,
-                    settings: {
-                        slidesToShow: 1,
-                    }
-                }
-
-            ]
-        });
-    }
-    $('.specialists_prev').click(function(){
-        $('.our_specialists').slick('slickPrev');
-    });
-
-    $('.specialists_next').click(function(){
-        $('.our_specialists').slick('slickNext');
+    $('.amount .up').click(function () {
+        var $input = $(this).parent().find('input');
+        $input.val(parseInt($input.val()) + 1);
+        $input.change();
+        return false;
     });
 
 
-    if($(".reviews_slider .slider_item").length >3){
-        $('.reviews_slider').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            arrows: false,
-            dots:false,
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 2,
-                    }
-                },
-                {
-                    breakpoint: 680,
-                    settings: {
-                        slidesToShow: 1,
-                    }
-                }
-
-            ]
-        });
-    }
-    $('.reviews_prev').click(function(){
-        $('.reviews_slider').slick('slickPrev');
-    });
-
-    $('.reviews_next').click(function(){
-        $('.reviews_slider').slick('slickNext');
-    });
-
-
-    $('.file').filestyle({
-        text : 'Прикрепить файл',
-        dragdrop: false,
-    });
-    $(".phone").mask("+375 (99) 999-99-99");
-
-
-
-
-
-    */
 
 });
 
