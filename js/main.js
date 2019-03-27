@@ -39,8 +39,8 @@ $(document).ready(function(){
             dots:false,
             fade:true,
             //speed: 1000,
-            //autoplay: true,
-            //autoplaySpeed: 2000,
+            autoplay: true,
+            autoplaySpeed: 2000,
         });
     }
 
@@ -192,6 +192,31 @@ $(document).ready(function(){
         return false;
     });
 
+
+
+    $('#up').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+    $("a.ankor").click(function () {
+        var elementClick = $(this).attr("href");
+        var destination = $(elementClick).offset().top;
+        $('html,body').animate( { scrollTop: destination }, 1100 );
+        return false;
+    });
+
+    $(window).resize(function(){
+        var pr_scroll_nav = $(".pr_scroll_nav").offset().top;
+        console.log(pr_scroll_nav);
+        $(window).scroll(function(){
+            if ($(window).scrollTop() > pr_scroll_nav) {
+                $('.pr_scroll_nav').addClass('fixed');
+            } else {
+                $('.pr_scroll_nav').removeClass('fixed');
+            }
+        });
+    });
+    $(window).resize();
 
 
 });

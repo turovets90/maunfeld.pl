@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Zamówienie</title>
+    <title>Porównaj produkty</title>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
@@ -119,54 +119,153 @@
       <div class="container">
         <ul class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">Główna</a></li>
-          <li class="breadcrumb-item"><a href="#content">Zamówienie</a></li>
+          <li class="breadcrumb-item"><a href="#content">Porównaj produkty</a></li>
         </ul>
         <div class="content">
-          <h1>Zamówienie</h1>
-          <div class="checkout_container">
-            <div class="row">
-              <div class="col-12">
-                <div class="checkout_form_container">
-                  <form class="checkout_form">
-                    <div class="row">
-                      <div class="col-12 col-sm-12 col-md-12 col-xl-6 field">
-                        <label>Imię <i class="necessarily">*</i></label>
-                        <input class="form-control" type="text" placeholder="Twoje imię"/>
-                      </div>
-                      <div class="col-12 col-sm-12 col-md-12 col-xl-6 field">
-                        <label>Telefon <i class="necessarily">*</i></label>
-                        <input class="form-control" type="text" placeholder="Twój telefon"/>
-                      </div>
-                      <div class="col-12 field">
-                        <label>Email <i class="necessarily">*</i></label>
-                        <input class="form-control" type="text" placeholder="Twój e-mail"/>
-                      </div>
-                      <div class="col-12 field delivery">
-                        <label>Wysyłka <i class="necessarily">*</i></label>
-                        <div class="row">
-                          <div class="col-12 co-sm-12 col-md-12 col-xl-6"><span class="radio">
-                              <input type="radio" name="delivery" id="delivery-1"/>
-                              <label for="delivery-1">DARMOWY TRANSPORT</label></span></div>
-                        </div>
-                      </div>
-                      <div class="col-12 field">
-                        <label>Adres wysyłki</label>
-                        <input class="form-control" type="text" placeholder="Twój adres"/>
-                      </div>
-                      <div class="col-12 field">
-                        <label>Komentarz do zamówienia</label>
-                        <textarea class="form-control" placeholder="Twój komentarz"></textarea>
-                      </div>
-                      <div class="col-12 field">
-                        <div class="row">
-                          <div class="col-12 col-sm-12 col-md-6 mb-3 mb-md-0"><i class="necessarily">*</i> - wymagane pola</div>
-                          <div class="col-12 col-sm-12 col-md-6 text-md-right text-xl-right">
-                            <button class="btn_default" type="submit">Złóż zamówienie</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
+          <h1>Porównaj produkty</h1>
+          <div class="compare_content">
+            <div class="compare_content_flex">
+              <div class="compare_col_parametry">
+                <div class="c_header">
+                  <div class="title">Produkt</div>
+                  <div class="checkbox">
+                    <input type="checkbox" id="hide_parametry"/>
+                    <label for="hide_parametry">Ukryj identyczne opcje</label>
+                  </div>
+                </div>
+                <div class="c_body">
+                  <div class="parammery_list">
+                    <div class="param_item">Wymiary urządzenia (sz x w x g)</div>
+                    <div class="param_item">Wymiary urządzenia (sz x w x g)</div>
+                    <div class="param_item">Wymiary urządzenia (sz x w x g)</div>
+                    <div class="param_item">Wymiary urządzenia (sz x w x g)</div>
+                    <div class="param_item">Wymiary urządzenia (sz x w x g)</div>
+                    <div class="param_item">Wymiary urządzenia (sz x w x g)</div>
+                    <div class="param_item">Wymiary urządzenia (sz x w x g)</div>
+                    <div class="param_item">Wymiary urządzenia (sz x w x g)</div>
+                    <div class="param_item">Wymiary urządzenia (sz x w x g)</div>
+                    <div class="param_item">Wymiary urządzenia (sz x w x g)</div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare_col_parametry product">
+                <div class="delete"></div>
+                <div class="c_header"><a class="img_thumbnail_link" href="#"><img src="img/dishwashers.png"/></a><a class="pr_name" href="#"> Wykonanie półek na butelki - WCB1K54B24.1</a>
+                  <button class="add_to_cart">Dodaj do koszyka</button>
+                </div>
+                <div class="c_body">
+                  <div class="parammery_list">
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare_col_parametry product">
+                <div class="delete"></div>
+                <div class="c_header"><a class="img_thumbnail_link" href="#"><img src="img/dishwashers.png"/></a><a class="pr_name" href="#"> Wykonanie półek na butelki - WCB1K54B24.1</a>
+                  <button class="add_to_cart">Dodaj do koszyka</button>
+                </div>
+                <div class="c_body">
+                  <div class="parammery_list">
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare_col_parametry product">
+                <div class="delete"></div>
+                <div class="c_header"><a class="img_thumbnail_link" href="#"><img src="img/dishwashers.png"/></a><a class="pr_name" href="#"> Wykonanie półek na butelki - WCB1K54B24.1</a>
+                  <button class="add_to_cart">Dodaj do koszyka</button>
+                </div>
+                <div class="c_body">
+                  <div class="parammery_list">
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare_col_parametry product">
+                <div class="delete"></div>
+                <div class="c_header"><a class="img_thumbnail_link" href="#"><img src="img/dishwashers.png"/></a><a class="pr_name" href="#"> Wykonanie półek na butelki - WCB1K54B24.1</a>
+                  <button class="add_to_cart">Dodaj do koszyka</button>
+                </div>
+                <div class="c_body">
+                  <div class="parammery_list">
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare_col_parametry product">
+                <div class="delete"></div>
+                <div class="c_header"><a class="img_thumbnail_link" href="#"><img src="img/dishwashers.png"/></a><a class="pr_name" href="#"> Wykonanie półek na butelki - WCB1K54B24.1</a>
+                  <button class="add_to_cart">Dodaj do koszyka</button>
+                </div>
+                <div class="c_body">
+                  <div class="parammery_list">
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                  </div>
+                </div>
+              </div>
+              <div class="compare_col_parametry product">
+                <div class="delete"></div>
+                <div class="c_header"><a class="img_thumbnail_link" href="#"><img src="img/dishwashers.png"/></a><a class="pr_name" href="#"> Wykonanie półek na butelki - WCB1K54B24.1</a>
+                  <button class="add_to_cart">Dodaj do koszyka</button>
+                </div>
+                <div class="c_body">
+                  <div class="parammery_list">
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                    <div class="param_item">60 × 6,1 × 51 cm</div>
+                  </div>
                 </div>
               </div>
             </div>
