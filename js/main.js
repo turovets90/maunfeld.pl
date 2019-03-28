@@ -31,6 +31,38 @@ $(document).ready(function(){
     });
 
 
+    if($(window).innerWidth() < 575){
+        $('.stock_slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots:true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+
+        $('.related_products_list').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots:true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+
+        $('.category_list > .row').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            dots:true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+
+    }
+
+
+
     if($('.main_slider .slider_item').length >1){
         $('.main_slider').slick({
             slidesToShow: 1,
@@ -59,6 +91,29 @@ $(document).ready(function(){
             slidesToScroll: 1,
             arrows: false,
             variableWidth: true,
+            responsive: [
+                {
+                    breakpoint: 991,
+                    settings: {
+                        slidesToShow: 3,
+                        variableWidth: false,
+                    }
+                },
+                {
+                    breakpoint: 767,
+                    settings: {
+                        slidesToShow: 2,
+                        variableWidth: false,
+                    }
+                },
+                {
+                    breakpoint: 575,
+                    settings: {
+                        slidesToShow: 1,
+                        variableWidth: false,
+                    }
+                }
+            ]
         });
     //}
 
@@ -72,13 +127,34 @@ $(document).ready(function(){
     });
 
 
-
-
     $('.sale_slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                    variableWidth: false,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    variableWidth: false,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: false,
+                }
+            }
+        ]
     });
 
     $('.sale_prev').click(function(){
@@ -95,6 +171,30 @@ $(document).ready(function(){
         slidesToScroll: 1,
         arrows: false,
         variableWidth: true,
+        responsive: [
+
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                    variableWidth: false,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    variableWidth: false,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: false,
+                }
+            }
+        ]
     });
 
     $('.hits_prev').click(function(){
@@ -111,6 +211,29 @@ $(document).ready(function(){
         slidesToScroll: 1,
         arrows: false,
         variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 3,
+                    variableWidth: false,
+                }
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    variableWidth: false,
+                }
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    variableWidth: false,
+                }
+            }
+        ]
     });
 
     $('.new_prev').click(function(){
@@ -198,25 +321,49 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: 0 }, 600);
         return false;
     });
-    $("a.ankor").click(function () {
-        var elementClick = $(this).attr("href");
-        var destination = $(elementClick).offset().top;
-        $('html,body').animate( { scrollTop: destination }, 1100 );
-        return false;
-    });
+
 
     $(window).resize(function(){
-        var pr_scroll_nav = $(".pr_scroll_nav").offset().top;
-        console.log(pr_scroll_nav);
+        var pr_scroll_nav = $(".pr_scroll_nav");
+        var header = $('header').outerHeight();
         $(window).scroll(function(){
-            if ($(window).scrollTop() > pr_scroll_nav) {
-                $('.pr_scroll_nav').addClass('fixed');
+            if ($(window).scrollTop() > header) {
+                $('header').addClass('fixed');
             } else {
-                $('.pr_scroll_nav').removeClass('fixed');
+                $('header').removeClass('fixed');
             }
         });
+        $('header').next().css({
+            "margin-top":+header+"px"
+        });
+        if(pr_scroll_nav){
+            var pr_scroll_nav_top = $(pr_scroll_nav).offset().top;
+            console.log(pr_scroll_nav_top);
+            $(window).scroll(function(){
+                if ($(window).scrollTop() > pr_scroll_nav_top) {
+                    $(pr_scroll_nav).addClass('fixed').css({
+                        "top":"96px"
+                    });
+                } else {
+                    $(pr_scroll_nav).removeClass('fixed');
+                }
+            });
+        }
+
+
+        $("a.ankor").click(function () {
+            var elementClick = $(this).attr("href");
+            var destination = $(elementClick).offset().top;
+            $('html,body').animate( { scrollTop: destination-header }, 1100 );
+            return false;
+        });
+
     });
     $(window).resize();
+
+
+
+
 
 
 });
