@@ -1909,6 +1909,10 @@ section{
           border-bottom: 2px solid #8D8EA1;
           padding: 0 10px 4px 20px;
           margin-bottom: 30px;
+          .transition(@transition_default);
+          &:hover{
+            .transform(translateX(-10px));
+          }
           @media (max-width:1500px){
             margin-bottom:20px;
           }
@@ -2141,6 +2145,9 @@ footer{
         a{
           display: inline-block;
           background: url(../img/social_sprites.png);
+          &:hover{
+            opacity: 0.8;
+          }
           &.facebook{
             width: 41px; height: 41px;
             background-position: -75px -10px;
@@ -2632,6 +2639,7 @@ footer{
               border:1px solid #E5E5E5;
               position: absolute;
               .m_a();
+              max-height: 99%;
             }
           }
         }
@@ -2782,6 +2790,9 @@ footer{
       .j-beetween();
       width: calc(100% - 70px);
       li{
+        .flex();
+        .j-center();
+        .ai-center();
         &:last-child{
           a{
             border-right: 0 !important;
@@ -2794,7 +2805,8 @@ footer{
           font-weight: @bold;
           border-right: 2px solid @bg_blue;
           padding: 1px 4vw;
-          display: inline-block;
+         display: inline-block;
+          text-align: center;
           @media (max-width:1500px){
             padding: 1px 4vw;
           }
@@ -2862,6 +2874,13 @@ footer{
         display: none;
       }
     }
+    &:hover{
+      picture{
+        img{
+          .transform(scale(1.1));
+        }
+      }
+    }
     &:before{
       .b_a();
       width: 2px;
@@ -2914,6 +2933,7 @@ footer{
       }
       img{
         max-height: 92px;
+        .transition(@transition_default);
       }
     }
     .d_desc{
@@ -2922,11 +2942,15 @@ footer{
       max-width: 380px;
       margin: auto auto 20px;
     }
+    .hidden_text{
+      display: none;
+    }
     .more{
       display: inline-block;
       text-decoration: underline;
       font-weight: @bold;
       color: @bg_blue;
+      cursor: pointer;
 
       &:hover, &:focus{
         text-decoration: none;
@@ -3373,6 +3397,9 @@ footer{
       position: relative;
       border:1px solid #7F7E7E;
       margin-left: 20px;
+      &:hover{
+        opacity: 0.7;
+      }
       @media (max-width:575px){
         width: 40px;
         height: 40px;
@@ -4508,7 +4535,9 @@ footer{
       @media (min-width:1200px){
         text-indent: -9999px;
         &:hover, &:focus{
-          opacity: 0.8;
+          &:before, &:after{
+            background: @bg_red;
+          }
         }
       }
       @media (max-width:1200px){
