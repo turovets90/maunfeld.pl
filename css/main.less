@@ -5321,3 +5321,43 @@ iframe{
   }
 
 }
+
+
+
+.related_products_list{
+  margin-top: 8px;
+  .slick-slide {
+    @media (min-width:992px){
+      display: block;
+      float: left;
+      position: relative;
+      overflow: visible !important;
+    }
+  }
+
+  .slick-list {
+    @media (min-width:992px){
+      position: relative;
+      display: initial;
+      width: 100%;
+      margin: initial;
+      padding: initial;
+      overflow: visible !important;
+      z-index: 99;
+      -webkit-transform: translate3d(0, 0, 0);
+      -moz-transform: translate3d(0, 0, 0);
+      -ms-transform: translate3d(0, 0, 0);
+      -o-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+  }
+}
+
+
+.modal {
+  z-index: 9999;
+}
+.modal-backdrop {
+  z-index: 9991;
+}
