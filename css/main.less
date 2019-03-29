@@ -5274,3 +5274,21 @@ iframe{
     background: rgba(207, 15, 30, 0.8);
   }
 }
+
+
+.s_filter .filter_nav,.s_catalog .catalog_nav{
+  > li{
+    &:hover, &.active{
+      &:before{
+        background: @bg_red;
+      }
+      > a,.filter_item{
+        color: @bg_red;
+      }
+      .arrow:before{
+        background: url(../img/down-arrow_red.png);
+      }
+    }
+  }
+
+}

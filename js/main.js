@@ -265,6 +265,7 @@ $(document).ready(function(){
 
     $('.catalog_nav .arrow').click(function () {
         $(this).toggleClass('act');
+        $(this).parent().toggleClass('active');
         $(this).next().slideToggle();
     });
 
@@ -281,6 +282,7 @@ $(document).ready(function(){
         var f_level2=$(this).find('.level2');
         $(f_item).click(function () {
             $(f_arrow).toggleClass('act');
+            $(f_arrow).parent().toggleClass('active');
             $(f_level2).slideToggle();
         });
     });
