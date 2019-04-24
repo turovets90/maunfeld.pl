@@ -224,7 +224,7 @@ h5, .h5{
   text-decoration: none;
   display: inline-block;
   color: #fff;
-  font-size: 18px;
+  font-size: 16px;
   @media (max-width:767px){
     font-size: 16px;
   }
@@ -237,19 +237,25 @@ h5, .h5{
   }
 }
 
+.top_bar{
+  .btn_default{
+    padding: 3px 15px;
+  }
+}
+
 
 .btn_default{
   position: relative;
   display: inline-block;
   color: #fff;
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
   text-align: center;
  .border-radius(2px);
   border:2px solid  #fff;
   padding: 10px 25px;
   @media (max-width:767px){
-    padding: 5px 15px;
+    padding: 10px 25px;
   }
   &:hover, &:focus{
       text-decoration: none;
@@ -262,8 +268,12 @@ h5, .h5{
   margin-right: 10px;
   .flex();
   min-width: 200px;
+  img{
+    max-height: 60px;
+  }
   a{
     .flex();
+
   }
   @media (max-width:575px){
     min-width: auto;
@@ -449,10 +459,10 @@ h5, .h5{
            text-decoration: none;
            font-size: 16px;
            display: inline-block;
-           padding: 30px 8px;
+           padding: 10px 8px;
            position: relative;
            @media (max-width:1200px){
-             padding: 25px 4px;
+             padding: 10px 4px;
            }
            @media (min-width:992px){
             white-space: nowrap;
@@ -836,7 +846,7 @@ h5, .h5{
           padding: 15px;
         }
         .title{
-          font-size: 44px;
+          font-size: 40px;
           color: #fff;
           text-transform: uppercase;    line-height: 1.2;    margin-bottom: 15px;
           @media (max-width:767px){
@@ -847,7 +857,7 @@ h5, .h5{
           }
         }
         .sub_title{
-          font-size: 24px;
+          font-size: 20px;
           color: #fff;
           text-transform: uppercase;    margin-bottom: 25px;
           @media (max-width:767px){
@@ -906,11 +916,11 @@ h5, .h5{
 
 
 .main_categories{
-  padding-top: 55px;
-  padding-bottom: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   @media (max-width:991px){
-      padding-top: 30px;
-    padding-bottom: 45px;
+      padding-top: 25px;
+    padding-bottom: 25px;
   }
   .container{
     max-width: 1200px;
@@ -1044,6 +1054,13 @@ h5, .h5{
     position: relative;
     border:1px solid #7F7E7E;
     margin-left: 20px;
+    cursor: pointer;
+    &:hover, &:focus{
+      border:1px solid #000;
+      &:before{
+        background: url(../img/s_custom-arrow_hover.png);
+      }
+    }
     @media (max-width:575px){
       width: 40px;
       height: 40px;
@@ -1065,18 +1082,18 @@ h5, .h5{
 
 
 .special_offers{
-  margin-bottom:100px;
+  margin-bottom:50px;
   @media (max-width:1500px){
-    margin-bottom:80px;
+    margin-bottom:30px;
   }
   @media (max-width:1200px){
-    margin-bottom:70px;
+    margin-bottom:20px;
   }
   @media (max-width:991px){
-    margin-bottom:50px;
+    margin-bottom:10px;
   }
   @media (max-width:767px){
-    margin-bottom:30px;
+    margin-bottom:10px;
   }
 
   .container{
@@ -1102,7 +1119,7 @@ h5, .h5{
           display: inline-block;
           text-align: center;
           color: #979797;
-          font-size: 30px;
+          font-size: 26px;
           text-transform: uppercase;
           position: relative;
           border:0;
@@ -1122,9 +1139,9 @@ h5, .h5{
           &:before{
             .b_a();
             width: 100%;
-            height: 8px;
+            height: 5px;
             background: @bg_blue;
-            bottom: -7px;
+            bottom: -4px;
             left: 0;
             opacity: 0;
             .transition(@transition_default);
@@ -1464,17 +1481,17 @@ h5, .h5{
 
 
 .banner{
-  height: 545px;
+  height: 500px;
   background-position: center;
   background-size:cover;
   @media (max-width:1200px){
-    height: 500px;
-  }
-  @media (max-width:991px){
     height: 450px;
   }
-  @media (max-width:767px){
+  @media (max-width:991px){
     height: 400px;
+  }
+  @media (max-width:767px){
+    height: 350px;
   }
 
   .container{
@@ -1485,25 +1502,28 @@ h5, .h5{
 
   .banner_content{
       background-color: rgba(18, 21, 92, 0.8);
-    max-width: 507px;
+    max-width: 460px;
     color: #fff;
     padding: 22px 40px 43px;
     position: absolute;
     left: 0;
-    bottom: 95px;
+    bottom: 100px;
     @media (max-width:1200px){
       bottom: 65px;
       left: 10px;
       right: 10px;
+      padding: 20px 30px 30px;
     }
     @media (max-width:991px){
       bottom:45px;
+      padding: 20px;
     }
     @media (max-width:767px){
       bottom:30px;
+      padding: 15px;
     }
     .title{
-        font-size: 44px;
+        font-size: 40px;
       text-transform: uppercase;    margin-bottom: 10px;
       @media (max-width:767px){
         font-size: 30px;
@@ -1513,7 +1533,7 @@ h5, .h5{
       }
     }
     .sub_title{
-        font-size: 24px;
+        font-size: 20px;
       text-transform: uppercase;    margin-bottom: 25px; @media (max-width:767px){
       font-size: 20px;
     }
@@ -1529,13 +1549,19 @@ h5, .h5{
 
 .stock_section{
   padding-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 0;
   @media (max-width:767px){
     padding-bottom: 30px;
   }
   @media (max-width:575px){
     padding-bottom: 0;
   }
+
+
+  .container{
+    max-width: 1165px;
+  }
+
   .item{
     text-align: center;
     @media (max-width:1200px){
@@ -1603,6 +1629,12 @@ h5, .h5{
         @media (max-width:767px){
           font-size: 14px;
           margin-bottom: 20px;
+          max-height: 3rem;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: normal;
+          -webkit-line-clamp: 2;
         }
       }
       .btn_default{
@@ -1671,7 +1703,7 @@ h5, .h5{
 
 .home_news{
   padding-top: 30px;
-  padding-bottom: 60px;
+  padding-bottom: 0;
   z-index: 2;
   @media (max-width:767px){
     padding-bottom: 30px;
@@ -1704,7 +1736,7 @@ h5, .h5{
     }
 
     &.small{
-      margin-bottom: 45px;
+      margin-bottom: 33px;
       @media (max-width:1200px){
         margin-bottom: 30px;
       }
@@ -1765,6 +1797,9 @@ h5, .h5{
         padding: 0 10px 0;
         opacity: 1;
         background: rgba(18,21,92,0.8);
+
+
+
       }
       .date{
         color: #fff;    margin-bottom: 18px;
@@ -1787,6 +1822,13 @@ h5, .h5{
         @media (max-width:767px){
           font-size: 14px;
           margin-bottom: 20px;
+
+          max-height: 3rem;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: normal;
+          -webkit-line-clamp: 2;
         }
       }
       .btn_default{
@@ -1803,8 +1845,8 @@ section{
 
 .home_about{
   @media (min-width:1200px){
-    padding-top: 90px;
-    padding-bottom: 125px;
+    padding-top: 30px;
+    padding-bottom: 50px;
   }
   position: relative;
   .crown{
@@ -5236,9 +5278,7 @@ header{
           }
         }
       }
-      .btn_default {
-        padding: 3px 25px;
-      }
+
     }
 
     .main_navbar .main_menu .nav>li>a{
