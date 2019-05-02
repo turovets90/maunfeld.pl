@@ -128,47 +128,132 @@
               <div class="col-12">
                 <div class="checkout_form_container">
                   <form class="checkout_form">
-                    <div class="row">
-                      <div class="col-12 col-sm-12 col-md-12 col-xl-6 field">
-                        <label>Imię <i class="necessarily">*</i></label>
-                        <input class="form-control" type="text" placeholder="Twoje imię"/>
-                      </div>
-                      <div class="col-12 col-sm-12 col-md-12 col-xl-6 field">
-                        <label>Telefon <i class="necessarily">*</i></label>
-                        <input class="form-control" type="text" placeholder="Twój telefon"/>
-                      </div>
-                      <div class="col-12 field">
-                        <label>Email <i class="necessarily">*</i></label>
-                        <input class="form-control" type="text" placeholder="Twój e-mail"/>
-                      </div>
-                      <div class="col-12 field delivery">
-                        <label>Wysyłka <i class="necessarily">*</i></label>
+                    <div class="mw_450">
+                      <div class="field group">
+                        <div class="title">Informacje dla kupujących</div>
                         <div class="row">
-                          <div class="col-12 co-sm-12 col-md-12 col-xl-6"><span class="radio">
-                              <input type="radio" name="delivery" id="delivery-1"/>
-                              <label for="delivery-1">DARMOWY TRANSPORT</label></span></div>
+                          <div class="col-12 field">
+                            <label>Adres e-mail</label>
+                            <input class="form-control" type="text" placeholder="example@email.com"/>
+                          </div>
+                          <div class="col-12 field">
+                            <label>Telefon / faks</label>
+                            <input class="form-control" type="text" placeholder="+48 (--) --- -- --"/>
+                          </div>
+                          <div class="col-12 field">
+                            <label>Twoje imię</label>
+                            <input class="form-control" type="text"/>
+                          </div>
                         </div>
                       </div>
-                      <div class="col-12 field">
-                        <label>Adres wysyłki</label>
-                        <input class="form-control" type="text" placeholder="Twój adres"/>
-                      </div>
-                      <div class="col-12 field">
-                        <label>Komentarz do zamówienia</label>
-                        <textarea class="form-control" placeholder="Twój komentarz"></textarea>
-                      </div>
-                      <div class="col-12 field">
+                      <div class="field group">
+                        <div class="title">adres wysyłki</div>
                         <div class="row">
-                          <div class="col-12 col-sm-12 col-md-6 mb-3 mb-md-0"><i class="necessarily">*</i> - wymagane pola</div>
-                          <div class="col-12 col-sm-12 col-md-6 text-md-right text-xl-right">
-                            <button class="btn_default" type="submit">Złóż zamówienie</button>
+                          <div class="col-12 field">
+                            <label>Miasto</label><span class="select">
+                              <select class="form-control">
+                                <option></option>
+                                <option>Miasto 1</option>
+                                <option>Miasto 2</option>
+                                <option>Miasto 3</option>
+                              </select></span>
                           </div>
+                          <div class="col-12 field">
+                            <label>Ulica</label>
+                            <input class="form-control" type="text"/>
+                          </div>
+                          <div class="col-12 field">
+                            <div class="row">
+                              <div class="col-12 col-sm-12 col-md-4">
+                                <label>Dom</label>
+                                <input class="form-control" type="text"/>
+                              </div>
+                              <div class="col-12 col-sm-12 col-md-4">
+                                <label>Mieszkanie</label>
+                                <input class="form-control" type="text"/>
+                              </div>
+                              <div class="col-12 col-sm-12 col-md-4">
+                                <label>Obudowa</label>
+                                <input class="form-control" type="text"/>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="field group">
+                        <div class="title">METODY PŁATNOŚCI</div>
+                        <div class="row">
+                          <div class="col-12 field">
+                            <div class="checkbox_field">
+                              <input class="checkbox" type="radio" name="radio" id="checkbox_11"/>
+                              <label for="checkbox_11">Za pobraniem</label>
+                            </div>
+                            <div class="checkbox_field">
+                              <input class="checkbox" type="radio" name="radio" id="checkbox_12"/>
+                              <label for="checkbox_12">Karta bankowa po otrzymaniu</label>
+                            </div>
+                            <div class="checkbox_field">
+                              <input class="checkbox" type="radio" name="radio" id="checkbox_13"/>
+                              <label for="checkbox_13">Rata lub pożyczka</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <label>Komentarz do zamówienia (niekoniecznie)</label>
+                      <textarea class="form-control"></textarea>
+                    </div>
+                    <div class="field">
+                      <div class="cart_container">
+                        <div class="cart_table">
+                          <div class="row cart_body">
+                            <div class="col-12 col-sm-12 col-md-6 col-xl-12">
+                              <div class="cart_product_item">
+                                <div class="c_product_img"><a href="#"><img src="img/dishwashers.png"/></a></div>
+                                <div class="c_product_name">
+                                  <div class="c_title">Nazwa produktu</div>
+                                  <div class="c_cont"><span class="c_name"><a href="#">Winiarka - Wykonanie półek na butelki - WCB1K54B24.1</a></span><span class="br">Artykuł: UТ000001786</span><span class="color">Kolor: czarny</span></div>
+                                </div>
+                                <div class="c_size">
+                                  <div class="c_title">Rabat</div>
+                                  <div class="c_cont"><span class="c_name">Rabat 0%</span></div>
+                                </div>
+                                <div class="c_price">
+                                  <div class="c_title">Cena bez rabatu</div>
+                                  <div class="c_cont"><span class="c_name">1 X 1.999,00 zł</span></div>
+                                </div>
+                                <div class="c_cost">
+                                  <div class="c_title">Koszt</div>
+                                  <div class="c_cont"><span class="c_name">1.500,00 zł</span></div>
+                                </div><span class="c_delete">Usuń</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="field">
+                      <div class="row">
+                        <div class="col-12 text-md-right text-xl-right">
+                          <div class="total">Łącznie do zapłaty, z uwzględnieniem rabatów i dostawy: <span class="total_price">1.999,00 Zł</span></div>
+                          <button class="btn_default red" type="submit">Złóż zamówienie</button>
                         </div>
                       </div>
                     </div>
                   </form>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="container ogladales">
+            <div class="title">Oglądałeś</div>
+            <div class="ogladales_list">
+              <div class="item"><a class="ogladales_item" href="#"><img src="img/cat_img.png"/></a></div>
+              <div class="item"><a class="ogladales_item" href="#"><img src="img/cat_img.png"/></a></div>
+              <div class="item"><a class="ogladales_item" href="#"><img src="img/cat_img.png"/></a></div>
+              <div class="item"><a class="ogladales_item" href="#"><img src="img/cat_img.png"/></a></div>
+              <div class="item"><a class="ogladales_item" href="#"><img src="img/cat_img.png"/></a></div>
             </div>
           </div>
         </div>
