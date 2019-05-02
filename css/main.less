@@ -1806,10 +1806,7 @@ h5, .h5{
 
       }
       .date{
-        color: #fff;    margin-bottom: 18px;
-        @media (max-width:1500px){
-            margin-bottom: 0;
-        }
+        color: #fff;
       }
       .title{
         font-size: 28px;            margin-bottom: 10px;
@@ -1820,19 +1817,20 @@ h5, .h5{
       }
       .desc{
         font-size: 16px;           margin-bottom: 30px;
+        max-height: 3rem;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+        -webkit-line-clamp: 2;
+
         @media (max-width:1500px){
           margin-bottom: 25px;
         }
         @media (max-width:767px){
           font-size: 14px;
-          margin-bottom: 20px;
+          margin-bottom: 15px;
 
-          max-height: 3rem;
-          -webkit-box-orient: vertical;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: normal;
-          -webkit-line-clamp: 2;
         }
       }
       .btn_default{
