@@ -359,7 +359,27 @@ $(document).ready(function(){
     });
 
 
+
+    $('.pr_desc_row .item').each(function(){
+        var more=$(this).find('.more');
+        var hidden_text=$(this).find('.hidden_text');
+        $(more).click(function(){
+            if($(hidden_text).is(':visible')){
+                $(hidden_text).slideUp();
+                $(more).text('Przeczytaj więcej');
+            }else{
+                $(hidden_text).slideDown();
+                $(more).text('Upadek');
+            }
+        });
+    });
+
+
+
+
+
     $(window).resize(function(){
+        
         var pr_scroll_nav = $(".pr_scroll_nav");
         var header = $('header').outerHeight();
         $(window).scroll(function(){
@@ -398,20 +418,6 @@ $(document).ready(function(){
     $(window).resize();
 
 
-
-    $('.pr_desc_row .item').each(function(){
-        var more=$(this).find('.more');
-        var hidden_text=$(this).find('.hidden_text');
-        $(more).click(function(){
-            if($(hidden_text).is(':visible')){
-                $(hidden_text).slideUp();
-                $(more).text('Przeczytaj więcej');
-            }else{
-                $(hidden_text).slideDown();
-                $(more).text('Upadek');
-            }
-        });
-    });
 
 
 
