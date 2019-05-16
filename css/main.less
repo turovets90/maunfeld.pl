@@ -975,7 +975,7 @@ h5, .h5{
           }
         }
         .c_item_title{
-          font-size: 23px;
+          font-size: 20px;
           color: #fff;
           text-transform: uppercase;
           margin-bottom: 58px;
@@ -1021,7 +1021,7 @@ h5, .h5{
         }
       }
       >.c_item_title{
-        font-size: 23px;
+        font-size: 20px;
         text-transform: uppercase;
         color: #181515;
         @media (max-width:991px){
@@ -1485,17 +1485,17 @@ h5, .h5{
 
 
 .banner{
-  height: 500px;
+  height: 400px;
   background-position: center;
   background-size:cover;
   @media (max-width:1200px){
-    height: 450px;
+    height: 350px;
   }
   @media (max-width:991px){
-    height: 400px;
+    height: 330px;
   }
   @media (max-width:767px){
-    height: 350px;
+    height: 300px;
   }
 
   .container{
@@ -1527,7 +1527,7 @@ h5, .h5{
       padding: 15px;
     }
     .title{
-      font-size: 38px;
+      font-size: 34px;
       text-transform: uppercase;    margin-bottom: 10px;
       @media (max-width:767px){
         font-size: 28px;
@@ -1537,7 +1537,7 @@ h5, .h5{
       }
     }
     .sub_title{
-      font-size: 19px;
+      font-size: 16px;
       text-transform: uppercase;    margin-bottom: 25px; @media (max-width:767px){
       font-size: 18px;
     }
@@ -1662,15 +1662,15 @@ h5, .h5{
 }
 .section_title{
   text-align: center;
-  font-size: 42px;
+  font-size: 35px;
   color: #181515;
   text-transform: uppercase;
   font-weight: @bold;
   @media (max-width:1200px){
-    font-size: 38px;
+    font-size: 32px;
   }
   @media (max-width:991px){
-    font-size: 33px;
+    font-size: 30px;
   }
   @media (max-width:767px){
     font-size: 28px;
@@ -1906,7 +1906,7 @@ section{
           margin-bottom: 10px;
           font-weight: @bold;
           @media (min-width:1200px){
-            font-size: 38px;
+            font-size: 35px;
           }
           @media (max-width:1500px){
             margin-top: 0;
@@ -2796,12 +2796,14 @@ footer{
   border-bottom: 3px solid @bg_blue;
   padding: 8px 0;
   &.fixed{
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    background: #fff;
-    width: 100%;
+    @media (min-width:1200px){
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9991;
+      background: #fff;
+      width: 100%;
+    }
   }
   @media (max-width:840px){
     display: none;
@@ -5279,8 +5281,8 @@ header{
   z-index: 9991;
   &.fixed{
     .top_bar {
-      padding: 6px 0;
-      height: 40px;
+      padding: 10px 0;
+      height: 50px;
       @media (max-width:767px){
         height: auto;
         div[class^="col"]{
@@ -5297,12 +5299,12 @@ header{
 
     .navbar_btn_group{
       @media (min-width:1200px){
-        margin-top: -96px;
+        margin-top: -105px;
       }
     }
     .logo_block {
       @media (min-width:1200px){
-        margin-top: -52px;
+        margin-top: -55px;
       }
     }
     .main_navbar{
@@ -5313,6 +5315,7 @@ header{
     .main_menu{
       @media (min-width:1200px){
         opacity: 0;
+        pointer-events: none;
       }
     }
 
@@ -5693,5 +5696,14 @@ iframe{
 @media (min-width:1200px){
   .cart_table .cart_header .c_cost, .cart_table .cart_product_item .c_cost{
     min-width: 100px;
+  }
+}
+
+
+footer{
+  .logo{
+    img{
+      max-height: 50px;
+    }
   }
 }

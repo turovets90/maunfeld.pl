@@ -398,7 +398,7 @@ $(document).ready(function(){
             $(window).scroll(function(){
                 if ($(window).scrollTop() > pr_scroll_nav_top) {
                     $(pr_scroll_nav).addClass('fixed').css({
-                        "top":"96px"
+                        "top":"50px"
                     });
                 } else {
                     $(pr_scroll_nav).removeClass('fixed');
